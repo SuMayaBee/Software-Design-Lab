@@ -114,7 +114,7 @@ You can use tools like `curl`, Postman, or Insomnia to test the endpoints.
         "name": "Bob Johnson",
         "email": "bob.j@sample.net",
         "roles": [
-            "VIEWER" // Role assigned in step 3
+            "VIEWER" 
         ]
     }
     ```
