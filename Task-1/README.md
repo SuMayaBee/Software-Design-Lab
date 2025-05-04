@@ -2,56 +2,7 @@
 
 This project implements a User Management System using Spring Boot, following Clean Architecture principles as specified in the assignment.
 
-## Requirements
 
-*   Java 17 or higher
-*   Maven 3.6 or higher
-
-## Architecture
-
-The codebase is structured according to Clean Architecture layers:
-
-*   `domain`: Contains core business entities (User, Role) with no framework dependencies.
-*   `application`: Contains use cases (UserService, RoleService) and repository interfaces (ports).
-*   `infrastructure`: Contains framework-specific implementations:
-    *   `controller`: REST API endpoints and DTOs.
-    *   `persistence`: JPA entities, Spring Data repositories, and repository adapters (implementing application interfaces).
-*   `config`: Spring Boot configuration (Bean wiring).
-
-## How to Build
-
-Use Maven to build the project:
-
-```bash
-mvn clean package
-```
-
-This will compile the code, run tests, and create an executable JAR file in the `target/` directory.
-
-## How to Run
-
-Once built, you can run the application using:
-
-```bash
-java -jar target/usermanagement-0.0.1-SNAPSHOT.jar
-```
-
-The application will start, and the API will be available at `http://localhost:8080`.
-
-The H2 database console will be available at `http://localhost:8080/h2-console`.
-Use the following details to connect:
-*   **Driver Class:** `org.h2.Driver`
-*   **JDBC URL:** `jdbc:h2:mem:testdb`
-*   **User Name:** `sa`
-*   **Password:** (leave blank)
-
-## How to Test
-
-Unit tests for the application layer can be run using Maven:
-
-```bash
-mvn test
-```
 
 ## API Endpoints for Testing
 
